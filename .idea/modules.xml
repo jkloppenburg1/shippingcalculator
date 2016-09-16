@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ShippingCalculator.iml" filepath="$PROJECT_DIR$/ShippingCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shippingcalculator.iml" filepath="$PROJECT_DIR$/shippingcalculator.iml" />
     </modules>
   </component>
 </project>

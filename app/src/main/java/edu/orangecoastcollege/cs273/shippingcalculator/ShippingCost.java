@@ -5,7 +5,7 @@ package edu.orangecoastcollege.cs273.shippingcalculator;
  */
 public class ShippingCost {
 
-    private double weight;
+    private int weight;
     private double baseCost;
     private double addedCost;
     private double totalCost;
@@ -15,42 +15,44 @@ public class ShippingCost {
         this.addedCost = 0.0;
     }
 
-    public ShippingCost(double weight, double baseCost, double addedCost, double totalCost) {
+    public ShippingCost(int weight, double baseCost, double addedCost, double totalCost) {
         this.weight = weight;
         this.baseCost = baseCost;
         this.addedCost = addedCost;
         this.totalCost = totalCost;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
+
+        if (weight <= 16)
+        {
+            this.addedCost = 0.0;
+        }
+        else
+        {
+            this.addedCost = ((weight - 16) / 4) * 0.5;
+        }
+
+        this.totalCost = this.baseCost + this.addedCost;
     }
 
     public double getBaseCost() {
         return baseCost;
     }
 
-    public void setBaseCost(double baseCost) {
-        this.baseCost = baseCost;
-    }
 
     public double getAddedCost() {
         return addedCost;
     }
 
-    public void setAddedCost(double addedCost) {
-        this.addedCost = addedCost;
-    }
 
     public double getTotalCost() {
         return totalCost;
     }
 
-    public void setTotalCost(double totalCost) {
-        this.totalCost = totalCost;
-    }
 }
