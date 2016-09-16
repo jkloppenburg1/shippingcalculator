@@ -35,7 +35,12 @@ public class ShippingCost {
         }
         else
         {
-            this.addedCost = ((weight - 16) / 4) * 0.5;
+            int myWeight = weight - 16;
+            while (myWeight > 0)
+            {
+                myWeight -= 4;
+                this.addedCost += 0.5;
+            }
         }
 
         this.totalCost = this.baseCost + this.addedCost;
