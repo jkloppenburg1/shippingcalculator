@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de Envío</string>
+    <string name="addedCost">Coste Añadido:</string>
+    <string name="baseCost">Costo Base:</string>
+    <string name="inOunces">(en onzas)</string>
+    <string name="textWeightOf">Peso del paquete</string>
+    <string name="totalCost"> El costo total de envío:</string>
+</resources>
